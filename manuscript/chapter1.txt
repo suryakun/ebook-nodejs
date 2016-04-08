@@ -1,2 +1,7 @@
-#Chapter 1
-Hello, world!,
+#Pendahuluan
+**Javascipt** beberapa tahun belakangan ini telah menjadi bahasa pemrograman yang sangat populer dan dapat di sejajarkan dengan bahasa pemrograman lain seperti ruby, php, dan java. Hal ini tidak lepas dari pengaruh munculnya NodeJS sebagai perangkat lunak yang membawa javascript ke lingkungan backend/server-side. NodeJS pertama kali diciptakan untuk Linux use pada tahun 2009. Nodejs dikembangkan oleh Ryan Dahl dan disponsori oleh sebuah perusahaan bernama Joyent. Seiring dengan berkembangnya Javascript sebagai bahasa pemrograman yang digunakan oleh Nodejs maka terdapat banyak perubahan yang dapat membuat code Javascript kita menjadi lebih stylish dan elegan. Hal ini lah yang ditawarkan oleh Ecmascript 6, yang mana perubahan-perubahan tersebut telah diterapkan pada Nodejs versi 5.10.1 ke atas.
+
+"Oke bro, stop basa-basi nya. jelasin ke gue apa itu Ecmascript 6!"
+
+Ecmascript6 atau Ecmascript2015 adalah sebuah standard scripting pada javascript yang ditetapkan oleh Ecma Internasional dan ISO/IEC 16262. atau dengan kata lain ini adalah standar untuk penulisan kode pada javascript yang sudah di tetapkan oleh sebuah badan yang memang berfungsi untuk membentuk sebuah pattern atau style pada pemrograman Javascript. Hingga bulan juni 2015 standarisasi kode program yang di terapkan pada javascript masih menggunakan Ecmascript 5 sampai pada akhirnya pada bulan tersebut Ecma Internasional merilis Ecmascript 6 yang membawa banyak fitur baru yang membuat kode javascript menjadi lebih modern. Selanjutnya mari kita bahas tentang sifat-sifat pada pemrograman NodeJs pada chapter selanjutnya.
+
