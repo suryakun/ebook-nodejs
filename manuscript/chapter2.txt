@@ -8,4 +8,14 @@ let berbeda dengan var yang dapat di deklarasikan secara global atau secara loka
 
 mari kita lihat perbedaan nya berikut ini:
 
-	this is code block
+	'use strict';
+
+	var name = 'spiderman'
+	if (name != 'venom') {
+		let enemyLevel = 'danger';	
+	};
+
+	console.log(name);
+	console.log(enemyLevel);
+
+code di atas akan menghasilkan error enemyLevel is undefined
