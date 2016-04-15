@@ -1,0 +1,11 @@
+#Block scoping
+
+##let (mode strict)
+
+statement let berguna untuk mendeklarasikan sebuah blok untuk variabel lokal, atau dengan kata lain *let* memungkinkan kita untuk mendeklarasikan variabel yang hanya bisa di akses didalam scope dimana variable itu berada. 
+
+let berbeda dengan var yang dapat di deklarasikan secara global atau secara lokal tanpa terpengaruh oleh blok scope dimana variable itu di deklarasikan.
+
+mari kita lihat perbedaan nya berikut ini:
+
+	this is code block
