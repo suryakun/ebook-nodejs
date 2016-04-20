@@ -2,9 +2,7 @@
 
 ##let (mode strict)
 
-statement let berguna untuk mendeklarasikan sebuah blok untuk variabel lokal, atau dengan kata lain *let* memungkinkan kita untuk mendeklarasikan variabel yang hanya bisa di akses didalam scope dimana variable itu berada. 
-
-let berbeda dengan var yang dapat di deklarasikan secara global atau secara lokal tanpa terpengaruh oleh blok scope dimana variable itu di deklarasikan.
+statement let berguna untuk mendeklarasikan sebuah variable yang hanya berlaku didalam sebuah blok atau dengan kata lain *let* memungkinkan kita untuk mendeklarasikan variabel yang hanya bisa di akses didalam scope dimana variable itu berada. 
 
 mari kita lihat perbedaan nya berikut ini:
 
@@ -18,4 +16,40 @@ mari kita lihat perbedaan nya berikut ini:
 	console.log(name);
 	console.log(enemyLevel);
 
-code di atas akan menghasilkan error enemyLevel is undefined
+code di atas akan menghasilkan error ** enemyLevel is undefined **, kenapa demikian? itu karena variable enemyLevel di deklarasikan di dalam scope if, sehingga variable enemyLevel hanya bisa di akses di dalam scope itu saja. berikut cara bagai mana variable enemyLevel dapat diakses:
+
+	'use strict';
+
+	var name = 'spiderman'
+	if (name != 'venom') {
+		let enemyLevel = 'danger';	
+
+		// let hanya bisa di akses didalam scope if saja
+		console.log(enemyLevel);
+	};
+
+	console.log(name);
+
+code di atas akan menghasilkan output
+
+	:$ danger
+	   spiderman
+
+
+
+perhatikan kembali code dibawah ini untuk mendapatkan gambaran lebih jelas mengenai syntax let:
+
+	'use strict';
+
+	var hero = 'spiderman'; //set global variable
+	let enemy = 'venom';  //set global variable
+
+	function attack() {
+		console.log(hero + ' attack ' + enemy);
+		enemy = 'loose';
+	}
+
+	attack(); //eksekusi function attack
+
+	console.log(hero);
+	console.log(enemy);

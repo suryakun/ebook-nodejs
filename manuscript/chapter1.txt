@@ -1,20 +1,10 @@
-#Pendahuluan
-**Javascipt** beberapa tahun belakangan ini telah menjadi bahasa pemrograman yang sangat populer dan dapat di sejajarkan dengan bahasa pemrograman lain seperti ruby, php, dan java. Hal ini tidak lepas dari pengaruh munculnya NodeJS sebagai perangkat lunak yang membawa javascript ke lingkungan backend/server-side. 
+#Pengenalan ECMAScript6
+##Apa itu ECMAScript6
+ECMAScript6 dikenal juga dengan nama ECMAScript 2015 adalah versi terakhir dari standard ECMAScript. ES6 memiliki perubahan yang sangat signifikan dalam bahasa pemrograman javascript dan update pertama untuk ECMAScript5 telah di rilis pada tahun 2009. Hingga sangat ini fitur-fitur ES6 masih terus dikembangkan.
 
-NodeJS pertama kali diciptakan untuk Linux use pada tahun 2009. Nodejs dikembangkan oleh Ryan Dahl dan disponsori oleh sebuah perusahaan bernama Joyent. Seiring dengan berkembangnya Javascript sebagai bahasa pemrograman yang digunakan oleh Nodejs maka terdapat banyak perubahan yang dapat membuat code Javascript kita menjadi lebih stylish dan elegan. Hal ini lah yang ditawarkan oleh Ecmascript 6, yang mana perubahan-perubahan tersebut telah diterapkan pada Nodejs versi 5.10.1 ke atas.
+##Pertanyaan umum tentang ECMAScript6
+### Apakah saat ini kita sudah dapat menggunakan ECMAScript6?
+ES6 sudah support untuk sebagian besar browser yang populer saat ini. tentu saja browser tersebut harus versi yang terbaru. Dan untuk NODEJS, ES6 sudah bisa di gunakan pada Node versi 1.5.x.
 
-
-
-
-"Oke bro, stop basa-basi nya. jelasin ke gue apa itu Ecmascript 6!"
-
-
-
-
-Ecmascript6 atau Ecmascript2015 adalah sebuah standard scripting pada javascript yang ditetapkan oleh Ecma Internasional dan ISO/IEC 16262. atau dengan kata lain ini adalah standar untuk penulisan kode pada javascript yang sudah di tetapkan oleh sebuah badan yang memang berfungsi untuk membentuk sebuah pattern atau style pada pemrograman Javascript. 
-
-Hingga bulan juni 2015 standarisasi kode program yang di terapkan pada javascript masih menggunakan Ecmascript 5 sampai pada akhirnya pada bulan tersebut Ecma Internasional merilis Ecmascript 6 yang membawa banyak fitur baru yang membuat kode javascript menjadi lebih modern.
-
-
-
-Selanjutnya mari kita bahas tentang sifat-sifat pada pemrograman NodeJs pada chapter selanjutnya.
+###Apa yang harus saya lakukan untuk berpindah dari ECMAScript5 ke ECMAScript6?
+Pada dasarnya semua kode yang dibuat dengan ECMAScript5 dapat berjalan di engine yang kompatibel dengan ECMAScript6. Jadi bisa dibilang ECMAScript6 adalah fitur-fitur baru yang di sediakan untuk membuat ECMAScript5 lebih maintainable. Anda akan mempelajari fitur-fitur ECMAScript6 pada buku ini.
