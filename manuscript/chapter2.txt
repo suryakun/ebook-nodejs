@@ -1,6 +1,6 @@
-#Block scoping
+#ECMAScript6
 
-##let (mode strict)
+##var vs let & const
 
 statement let berguna untuk mendeklarasikan sebuah variable yang hanya berlaku didalam sebuah blok atau dengan kata lain *let* memungkinkan kita untuk mendeklarasikan variabel yang hanya bisa di akses didalam scope dimana variable itu berada. 
 
@@ -32,24 +32,26 @@ code di atas akan menghasilkan error ** enemyLevel is undefined **, kenapa demik
 
 code di atas akan menghasilkan output
 
-	:$ danger
-	   spiderman
+![letvar1](let-var1.png)
 
-
+kita dapat menampilkan varibale enemyLevel dengan perintah `console.log(enemyLevel);` di dalam scope if
 
 perhatikan kembali code dibawah ini untuk mendapatkan gambaran lebih jelas mengenai syntax let:
 
-	'use strict';
-
-	var hero = 'spiderman'; //set global variable
-	let enemy = 'venom';  //set global variable
-
-	function attack() {
-		console.log(hero + ' attack ' + enemy);
-		enemy = 'loose';
+	function varTest() {
+		var x = 31;
+		if (true) {
+			var x = 71;  // same variable!
+			console.log(x);  // 71
+ 		}
+		console.log(x);  // 71
 	}
 
-	attack(); //eksekusi function attack
-
-	console.log(hero);
-	console.log(enemy);
+	function letTest() {
+  		let x = 31;
+		if (true) {
+			let x = 71;  // different variable
+			console.log(x);  // 71
+		}
+		console.log(x);  // 31
+	}

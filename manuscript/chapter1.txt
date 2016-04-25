@@ -3,8 +3,10 @@
 ECMAScript6 dikenal juga dengan nama ECMAScript 2015 adalah versi terakhir dari standard ECMAScript. ES6 memiliki perubahan yang sangat signifikan dalam bahasa pemrograman javascript dan update pertama untuk ECMAScript5 telah di rilis pada tahun 2009. Hingga sangat ini fitur-fitur ES6 masih terus dikembangkan.
 
 ##Pertanyaan umum tentang ECMAScript6
-Apakah saat ini kita sudah dapat menggunakan ECMAScript6?**
+**Apakah saat ini kita sudah dapat menggunakan ECMAScript6?**
+
 ES6 sudah support untuk sebagian besar browser yang populer saat ini. tentu saja browser tersebut harus versi yang terbaru. Dan untuk NODEJS, ES6 sudah bisa di gunakan pada Node versi 1.5.x.
 
 **Apa yang harus saya lakukan untuk berpindah dari ECMAScript5 ke ECMAScript6?**
+
 Pada dasarnya semua kode yang dibuat dengan ECMAScript5 dapat berjalan di engine yang kompatibel dengan ECMAScript6. Jadi bisa dibilang ECMAScript6 adalah fitur-fitur baru yang di sediakan untuk membuat ECMAScript5 lebih maintainable. Anda akan mempelajari fitur-fitur ECMAScript6 pada buku ini.
