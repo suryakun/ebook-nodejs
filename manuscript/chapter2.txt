@@ -45,9 +45,9 @@ perhatikan kembali code dibawah ini untuk mendapatkan gambaran lebih jelas menge
 		console.log(x);  // 71
 		}
 	console.log(x);  // 71
-}
+}```
 
-function letTest() {
+```function letTest() {
 		let x = 31;
 	if (true) {
 		let x = 71;  // different variable
