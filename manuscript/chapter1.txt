@@ -1,5 +1,6 @@
 #Pengenalan ECMAScript6
-##Apa itu ECMAScript6
+
+##Apa itu ECMAScript6?
 ECMAScript6 dikenal juga dengan nama ECMAScript 2015 adalah versi terakhir dari standard ECMAScript. ES6 memiliki perubahan yang sangat signifikan dalam bahasa pemrograman javascript dan update pertama untuk ECMAScript5 telah di rilis pada tahun 2009. Hingga sangat ini fitur-fitur ES6 masih terus dikembangkan.
 
 ##Pertanyaan umum tentang ECMAScript6
