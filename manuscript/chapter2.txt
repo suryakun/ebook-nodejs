@@ -38,7 +38,7 @@ kita dapat menampilkan varibale enemyLevel dengan perintah `console.log(enemyLev
 
 perhatikan kembali code dibawah ini untuk mendapatkan gambaran lebih jelas mengenai syntax let:
 
-`function varTest() {
+```function varTest() {
 	var x = 31;
 	if (true) {
 		var x = 71;  // same variable!
@@ -54,7 +54,7 @@ function letTest() {
 		console.log(x);  // 71
 	}
 	console.log(x);  // 31
-}`
+}```
 
 jika function varTest di eksekusi maka akan menghasilkan nilai 71 dan 71. hal ini dikarenakan deklarasi variable menggunakan var tidak terpengaruh dengan scope if sehingga var x dapat di akses di dalam maupun di luar scope if.
 sedangkan jika kita kita jalankan fungsi letTest(), hasil yang akan kita dapatkan adalah 71 dan 31 karena variable x yang di deklarasikan berada dalam scope yang berbeda.
