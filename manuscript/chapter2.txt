@@ -32,29 +32,28 @@ code di atas akan menghasilkan error ** enemyLevel is undefined **, kenapa demik
 
 code di atas akan menghasilkan output
 
-![letvar1](let-var1.png)
+![letvar1](let-var1)
 
 kita dapat menampilkan varibale enemyLevel dengan perintah `console.log(enemyLevel);` di dalam scope if
 
 perhatikan kembali code dibawah ini untuk mendapatkan gambaran lebih jelas mengenai syntax let:
 
-```function varTest() {
-	var x = 31;
-	if (true) {
-		var x = 71;  // same variable!
-		console.log(x);  // 71
-		}
-	console.log(x);  // 71
-}```
-
-```function letTest() {
-		let x = 31;
-	if (true) {
-		let x = 71;  // different variable
+	function varTest() {
+		var x = 31;
+		if (true) {
+			var x = 71;  // same variable!
+			console.log(x);  // 71
+			}
 		console.log(x);  // 71
 	}
-	console.log(x);  // 31
-}```
+	function letTest() {
+			let x = 31;
+		if (true) {
+			let x = 71;  // different variable
+			console.log(x);  // 71
+		}
+		console.log(x);  // 31
+	}
 
 jika function varTest di eksekusi maka akan menghasilkan nilai 71 dan 71. hal ini dikarenakan deklarasi variable menggunakan var tidak terpengaruh dengan scope if sehingga var x dapat di akses di dalam maupun di luar scope if.
 sedangkan jika kita kita jalankan fungsi letTest(), hasil yang akan kita dapatkan adalah 71 dan 31 karena variable x yang di deklarasikan berada dalam scope yang berbeda.
