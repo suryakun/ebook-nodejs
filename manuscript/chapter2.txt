@@ -2,9 +2,9 @@
 
 ##var vs let & const
 
-statement let berguna untuk mendeklarasikan sebuah variable yang hanya berlaku didalam sebuah blok atau dengan kata lain *let* memungkinkan kita untuk mendeklarasikan variabel yang hanya bisa di akses didalam scope dimana variable itu berada. 
+Statement let berguna untuk mendeklarasikan sebuah variable yang hanya berlaku didalam sebuah blok atau dengan kata lain *let* memungkinkan kita untuk mendeklarasikan variabel yang hanya bisa di akses didalam scope dimana variable itu berada. 
 
-mari kita lihat perbedaan nya berikut ini:
+Mari kita lihat perbedaan nya berikut ini:
 
 	'use strict';
 
@@ -16,7 +16,7 @@ mari kita lihat perbedaan nya berikut ini:
 	console.log(name);
 	console.log(enemyLevel);
 
-code di atas akan menghasilkan error ** enemyLevel is undefined **, kenapa demikian? itu karena variable enemyLevel di deklarasikan di dalam scope if, sehingga variable enemyLevel hanya bisa di akses di dalam scope itu saja. berikut cara bagai mana variable enemyLevel dapat diakses:
+Code di atas akan menghasilkan error `enemyLevel is undefined`, kenapa demikian? itu karena variable enemyLevel di deklarasikan di dalam scope if, sehingga variable enemyLevel hanya bisa di akses di dalam scope itu saja. berikut cara bagai mana variable enemyLevel dapat diakses:
 
 	'use strict';
 
@@ -30,13 +30,9 @@ code di atas akan menghasilkan error ** enemyLevel is undefined **, kenapa demik
 
 	console.log(name);
 
-code di atas akan menghasilkan output
+Code di atas akan menghasilkan output danger dan spiderman. Kita dapat menampilkan varibale enemyLevel dengan perintah `console.log(enemyLevel);` di dalam scope if(){}.
 
-![letvar1](let-var1)
-
-kita dapat menampilkan varibale enemyLevel dengan perintah `console.log(enemyLevel);` di dalam scope if
-
-perhatikan kembali code dibawah ini untuk mendapatkan gambaran lebih jelas mengenai syntax let:
+Perhatikan kembali code dibawah ini untuk mendapatkan gambaran lebih jelas mengenai syntax let:
 
 	function varTest() {
 		var x = 31;
@@ -55,5 +51,16 @@ perhatikan kembali code dibawah ini untuk mendapatkan gambaran lebih jelas menge
 		console.log(x);  // 31
 	}
 
-jika function varTest di eksekusi maka akan menghasilkan nilai 71 dan 71. hal ini dikarenakan deklarasi variable menggunakan var tidak terpengaruh dengan scope if sehingga var x dapat di akses di dalam maupun di luar scope if.
-sedangkan jika kita kita jalankan fungsi letTest(), hasil yang akan kita dapatkan adalah 71 dan 31 karena variable x yang di deklarasikan berada dalam scope yang berbeda.
+Jika function varTest di eksekusi maka akan menghasilkan nilai 71 dan 71. Hal ini dikarenakan deklarasi variable menggunakan var tidak terpengaruh dengan scope if sehingga var x dapat di akses di dalam maupun di luar scope if.
+Sedangkan jika kita kita jalankan fungsi letTest(), hasil yang akan kita dapatkan adalah 71 dan 31 karena variable x yang di deklarasikan berada dalam scope yang berbeda.
+
+Fitur let juga sangat berguna untuk meng enkapsulasi variable yang di gunakan dalam perulangan seperti `for` atau `loop` seperti kode berikut ini:
+
+	'use strict';
+	for(let i = 0; i< 5; i++) 
+	{
+		console.log("hitungan ke " + i);
+	}
+	console.log(i); // error i is not defined
+
+Kode di atas akan menghasilkan error i is not defined dikarenakan variable i yang kita deklarasikan menggunakan let telah ter-enkapsulasi di dalam scope for. Hal ini sangat berguna ketika kita akan membuat variable berisi value yang sangat sensitif dan tidak boleh di rubah di luar scope nya.
